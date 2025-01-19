@@ -1,8 +1,10 @@
 <template>
-  <button @click="getAnimalsData">Get Animal Datas</button>
+  <div>
+    <button @click="getAnimalsData">Get Animal Datas</button>
 
-  <div v-for="(v, i) in animals" :key="i">
-    <h2>{{ v.name }}</h2>
+    <div v-for="(v, i) in animals" :key="i">
+      {{ v.name }}
+    </div>
   </div>
 </template>
 
